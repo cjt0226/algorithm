@@ -16,10 +16,10 @@ class Solution:
                 ll.next = l2
                 l2 = l2.next
             ll = ll.next
-        if l1 is None:
-            ll.next = l2
-        else:
+        if l1:
             ll.next = l1
+        else:
+            ll.next = l2
         return header.next
 
 
